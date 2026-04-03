@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://doltqdncnrcbx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_danfw"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_un3v7"]
+albedo_color = Color(0.7882353, 0.78431374, 0, 1)
+
+[node name="ObjLamp" type="CSGCombiner3D" unique_id=280246241]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=1100800222]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.82180786, 0)
+radius = 0.64501953
+height = 0.35638428
+cone = true
+material = SubResource("StandardMaterial3D_danfw")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="." unique_id=1242267805]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24584961, 0)
+radius = 0.1303711
+height = 1.5083008
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="." unique_id=1524861994]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.42767334, 0)
+polygon = PackedVector2Array(0, 0, 0, 1, 0.5961914, 0.9449463, 1, 0)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 8
+material = SubResource("StandardMaterial3D_un3v7")

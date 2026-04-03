@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ovs3xsf27gl8"]
+
+[ext_resource type="Script" uid="uid://4xma56niu1wo" path="res://scenes/Goal.gd" id="1_grq7m"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sos67"]
+size = Vector3(3, 3, 3)
+
+[node name="Goal" type="Area3D" unique_id=1324622637]
+script = ExtResource("1_grq7m")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=236434469]
+shape = SubResource("BoxShape3D_sos67")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

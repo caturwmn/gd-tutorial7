@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://danq2divjq1nq"]
+
+[ext_resource type="PackedScene" uid="uid://cn88jo4txsk07" path="res://scenes/World1.tscn" id="1_6ovph"]
+[ext_resource type="PackedScene" uid="uid://bjvvc4yryfqdq" path="res://scenes/Player.tscn" id="2_bwv4p"]
+[ext_resource type="PackedScene" uid="uid://doltqdncnrcbx" path="res://scenes/ObjLamp.tscn" id="3_odhdn"]
+
+[node name="Level 1" type="Node3D" unique_id=1015877990]
+
+[node name="World 1" parent="." unique_id=2036623164 instance=ExtResource("1_6ovph")]
+
+[node name="Player" parent="." unique_id=2032045715 instance=ExtResource("2_bwv4p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8142967, 0)
+
+[node name="ObjLamp" parent="." unique_id=280246241 instance=ExtResource("3_odhdn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.612793, 1.2940063, 2.5590363)
+
+[node name="ObjLamp2" parent="." unique_id=559932188 instance=ExtResource("3_odhdn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.858765, 1.218811, -2.8622742)

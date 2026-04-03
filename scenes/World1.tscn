@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://cn88jo4txsk07"]
+
+[ext_resource type="PackedScene" uid="uid://ovs3xsf27gl8" path="res://scenes/Goal.tscn" id="1_gv26a"]
+
+[node name="World 1" type="Node3D" unique_id=2036623164]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=1823654789]
+use_collision = true
+
+[node name="Room 1" type="CSGBox3D" parent="CSGCombiner3D" unique_id=137544781]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.079764, 3.9454145, 0.5358887)
+use_collision = true
+flip_faces = true
+size = Vector3(16.25, 7, 10)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="CSGCombiner3D/Room 1" unique_id=148391708]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.958605, 2.8200812, 0)
+omni_range = 51.321
+omni_attenuation = 0.136
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1699948116]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5422363, 0, 0.5182781)
+flip_faces = true
+size = Vector3(8, 3, 10)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=260163608]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.975084, 10.270681, 0)
+flip_faces = true
+size = Vector3(10, 20, 20)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1009677446]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9735556, -0.13804626, 0)
+use_collision = true
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1747501927]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8647747, -0.09863281, 0)
+use_collision = true
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=1986188573]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.501111, 0.11488342, 0)
+use_collision = true
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=1094880579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.372372, 0.4260254, 0)
+use_collision = true
+
+[node name="Goal" parent="." unique_id=1324622637 instance=ExtResource("1_gv26a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.889084, 1.484436, 0)
+sceneName = "Win Screen"
+
+[node name="CSGTorus3D" type="CSGTorus3D" parent="Goal" unique_id=1492372162]
+
+[node name="Goal2" parent="." unique_id=476510672 instance=ExtResource("1_gv26a")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 6.401306, -8.527433, 0)
+sceneName = "Level1"
